@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=7E6um7NGmeE&list=PLjwm_8O3suyOFd8LTFqgw9v7MqPNtgINA
+5:11:19
+
+cors --> allow frontend ip to access the backend
+dotenv --> so we can use environment variables 
+express --> to create api 
+jsonwebtoken --> to enable user authentication 
+mongoose --> manage database connectivity 
+multer --> to store images on cloudinary storage
+cloudinary 
+nodemon --> watch changes 
+razorpay --> online payment 
+stripe --> online payment
+validator --> check data coming from user is valid or not 
+bcrypt --> encrypt user password & store it in database
