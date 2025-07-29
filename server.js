@@ -4,6 +4,8 @@ import cors from "cors";
 import "dotenv/config";
 import connectDB from "./config/mongodb.js";
 import connectCloudinary from "./config/cloudinary.js";
+import userRouter from "./routes/userRoute.js";
+import productRouter from "./routes/productRoute.js"
 // app config
 /*
 it returns an Express application instance (app), which acts as the backbone of your
@@ -21,9 +23,8 @@ app.use(cors({})); // so we can access backend from any ip
 app.use(express.json());
 
 // api endpoints
-app.get("/", (req, res) => {
-    res.send("api working");
-});
+app.use("/api/user", userRouter); //  base path -> prefix all routes in userRouter by /api/user
+app.use("/api/product", productRouter);
 
 // start the server
 app.listen(4000, () => {
