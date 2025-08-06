@@ -13,4 +13,3 @@ stripe --> online payment
 validator --> check data coming from user is valid or not 
 bcrypt --> encrypt user password & store it in database
 
-5:56
